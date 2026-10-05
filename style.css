@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul: #1565c0;
+    --azul-oscuro: #0d47a1;
+    --gris: #f1f3f5;
+    --gris-texto: #555;
+    --blanco: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    line-height: 1.6;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.seccion {
+    padding: 60px 0;
+}
+
+h2 {
+    color: var(--azul-oscuro);
+    margin-bottom: 20px;
+}
+
+
+/* HEADER */
+
+header {
+    background: var(--azul-oscuro);
+    padding: 15px 0;
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.menu a {
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.menu a:hover,
+.carreras a:hover {
+    color: #bbb;
+}
+
+.boton-menu {
+    display: none;
+}
+
+
+/* INICIO */
+
+.hero {
+    background: var(--gris);
+    padding: 70px 0;
+}
+
+.hero .contenedor {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-texto {
+    flex: 1;
+}
+
+.hero h1 {
+    color: var(--azul-oscuro);
+    font-size: 45px;
+    margin: 15px 0;
+}
+
+.hero p {
+    color: var(--gris-texto);
+    margin-bottom: 20px;
+}
+
+.hero img {
+    width: 45%;
+    border-radius: 10px;
+}
+
+.boton {
+    display: inline-block;
+    background: var(--azul);
+    color: var(--blanco);
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.boton:hover {
+    background: var(--azul-oscuro);
+}
+
+
+/* NOSOTROS Y BENEFICIOS */
+
+.nosotros,
+.beneficios {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.nosotros div,
+.beneficios div {
+    flex: 1;
+    min-width: 0;
+    padding: 25px;
+    background: var(--gris);
+    border-left: 4px solid var(--azul);
+    border-radius: 5px;
+}
+
+.nosotros h3,
+.beneficios h3,
+.carreras h3 {
+    color: var(--azul-oscuro);
+    margin-bottom: 10px;
+}
+
+.nosotros p,
+.beneficios p,
+.carreras p {
+    color: var(--gris-texto);
+}
+
+
+/* CARRERAS */
+
+#carreras {
+    background: var(--gris);
+}
+
+.carreras {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.carreras article {
+    background: var(--blanco);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px #0002;
+}
+
+.carreras img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.carreras h3,
+.carreras p,
+.carreras a {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.carreras h3 {
+    margin-top: 20px;
+}
+
+.carreras a {
+    display: inline-block;
+    color: var(--azul);
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* FORMULARIO */
+
+#registro {
+    background: var(--gris);
+}
+
+form {
+    max-width: 650px;
+    margin-top: 30px;
+    padding: 30px;
+    background: var(--blanco);
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin: 12px 0 5px;
+    font-weight: bold;
+}
+
+form input:not([type="radio"]):not([type="checkbox"]),
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input:focus,
+form select:focus {
+    border-color: var(--azul);
+    outline: none;
+}
+
+form button {
+    border: none;
+    cursor: pointer;
+}
+
+#mensaje {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: var(--azul-oscuro);
+    color: var(--blanco);
+    padding: 35px 0;
+}
+
+footer p {
+    color: #ddd;
+}
+
+
+/* RESPONSIVE TABLET */
+
+@media (max-width: 900px) {
+
+    header .contenedor {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 15px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .carreras {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .beneficios {
+        flex-wrap: wrap;
+    }
+
+    .beneficios div {
+        flex: 1 1 40%;
+    }
+}
+
+
+/* RESPONSIVE CELULAR */
+
+@media (max-width: 600px) {
+
+    header .contenedor,
+    .hero .contenedor,
+    .nosotros,
+    .beneficios {
+        flex-direction: column;
+    }
+
+    .seccion,
+    .hero {
+        padding: 35px 0;
+    }
+
+    .hero {
+        text-align: center;
+    }
+
+    .hero .contenedor {
+        gap: 25px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+        margin: 0 0 15px;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .carreras {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        padding: 20px;
+    }
+}

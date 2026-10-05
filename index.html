@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Tecnológico INFOTECS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <a href="index.html" class="logo">
+                <img src="logo.jpg" alt="Logo INFOTECS">
+                <span>INFOTECS</span>
+            </a>
+            <button id="botonMenu" class="boton-menu">☰</button>
+            <nav id="navegacion">
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="v1.html">Nosotros</a></li>
+                    <li><a href="v2.html">Carreras</a></li>
+                    <li><a href="v3.html">Beneficios</a></li>
+                    <li><a href="index.html#registro">Registro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!--Inicio-->
+        <section id="inicio" class="hero">
+            <div class="contenedor">
+                <div class="hero-texto">
+                    <span>FORMACIÓN TÉCNICA SUPERIOR</span>
+                    <h1>"Formación técnica superior para construir tu futuro."</h1>
+                    <p>
+                        Desarrolla tus habilidades y prepárate
+                        para el mundo laboral.
+                    </p>
+                    <a href="#carreras" class="boton">Ver Carreras</a>
+                    <a href="#registro" class="boton">Inscribirme</a>
+                </div>
+                <img src="inicio.jpg" alt="Estudiantes de INFOTECS">
+             </div>
+        </section>
+        <!--Nosotros-->
+        <section id="nosotros" class="seccion">
+            <div class="contenedor">
+                <h2>Sobre nosotros</h2>
+                <p>
+                    En INFOTECS formamos profesionales técnicos
+                    preparados para las necesidades del mercado laboral.
+                </p>
+            <div class="nosotros">
+                <div>
+                    <h3>Formación de calidad</h3>
+                    <p>
+                        Contamos con docentes especializados
+                        y una formación orientada a la práctica.
+                    </p>
+                </div>
+                <div>
+                    <h3>Preparación profesional</h3>
+                    <p>
+                        Desarrollamos conocimientos y competencias
+                        para el mundo laboral.
+                    </p>
+                </div>    
+            </div>
+        </div>
+    </section>
+        <!--Carreras-->
+        <section id="carreras" class="seccion">
+            <div class="contenedor">
+                <h2>Nuestras carreras</h2>
+                <div class="carreras">
+                    <article>
+                        <img src="computacion.jpg" alt="Computación e informática">
+                        <h3>Computación e Informática</h3>
+                        <p>
+                            Aprende programación, desarrollo web
+                            y base de datos.
+                        </p>
+                        <a href="#registro">Solicitar información</a>
+                    </article>
+                    <article>
+                        <img src="mecanica.jpg" alt="Mecánica Industrial">
+                        <h3>Mecánica Industrial</h3>
+                        <p>
+                            Aprende sobre máquinas, mantenimiento
+                            y procesos industriales.
+                        </p>
+                        <a href="#registro">Solicitar información</a>
+                    </article>
+                    <article>
+                        <img src="diseño.jpg" alt="Diseño Gráfico">
+                        <h3>Diseño Gráfico</h3>
+                        <p>
+                            Desarrolla habilidades de diseño 
+                            y comunicación visual.
+                        </p>
+                        <a href="#registro">Solicitar información</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!--Beneficios-->
+        <section id="Beneficios" class="seccion">
+            <div class="contenedor">
+                <h2>¿Por qué estudiar en INFOTECS?</h2>
+                <div class="beneficios">
+                    <div>
+                        <h3>✓Docentes especializados</h3>
+                        <p>Profesionales con experiencia.</p>
+                    </div>
+                    <div>
+                        <h3>✓Formación Técnica</h3>
+                        <p>Aprendizaje relacionado con el mundo laboral.</p>
+                    </div>
+                    <div>
+                        <h3>✓Certificación</h3>
+                        <p>Fortalece tu perfil profesional.</p>
+                    </div>
+                    <div>
+                        <h3>✓Orientación profesional</h3>
+                        <p>Apoyo durante tu formación.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Registro-->
+        <section id="registro" class="seccion">
+            <div class="contenedor">
+                <h2>Registrate</h2>
+                <p>
+                    Completa tus datos para recibir información
+                    sobre nuestras carreras.
+                </p>
+                <form id="formRegistro" method="post">
+                    <label for="nombre" aria-placeholder="Ej.: Carlos Miguel Espinoza Tellez">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <label for="correo" aria-placeholder="Ej.: carlos123@gmail.com">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo">
+                    <label for="telefono" aria-placeholder="Ej.: 999 888 777">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono">
+                    <label for="carrera" aria-placeholder="Ej.: Diseño Gráfico">Carrera de interés</label>
+                    <select id="carrera" name="carrera">
+                        <option value="">Seleccione una carrera</option>
+                        <option value="computacion">Computación e información</option>
+                        <option value="mecanica">Mecánica Industrial</option>
+                        <option value="diseño">Diseño Gráfico</option>
+                    </select>
+                    <p>Modalidad</p>
+                    <label>
+                        <input type="radio" name="modalidad" value="presencial">
+                        Presencial
+                    </label>
+                    <label>
+                        <input type="radio" name="modalidad" value="virtual">
+                        Virtual
+                    </label>
+                    <label>
+                        <input type="checkbox" id="terminos">
+                        Acepto recibir información
+                    </label>
+                    <p id="mensaje"></p>
+                    <button type="submit">
+                        Registrar Datos
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor">
+            <h3>Instituto Tecnológico INFOTECS</h3>
+            <p>
+                Formación técnica para construir tu futuro.
+            </p>
+            <p>
+                Lima, Perú | contacto@infotecs.edu.pe
+            </p>
+            <p>
+                2026 INFOTECS
+            </p>
+        </div>
+    </footer>
+    <script src="javascript.js"></script>
+
+</body>
+</html>
